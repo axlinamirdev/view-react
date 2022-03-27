@@ -23,6 +23,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import "../assets/css/iwana-cash/template.css"
 import "../assets/css/iwana-cash/home.css"
 import "../assets/css/iwana-cash/store.css"
+import "../assets/css/iwana-cash/extension.css"
   
 function App() {
   

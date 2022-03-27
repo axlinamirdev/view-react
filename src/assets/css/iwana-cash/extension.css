@@ -1,0 +1,156 @@
+.extension-h4 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: var(--color-gray-2);
+	margin-top: 2rem;
+}
+
+.trazo {
+	height: 76px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.extension-panel {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ext-title {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clic-button__ext {
+	margin-top: 7rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.extension-detail {
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    width: 95%;
+	    margin: 0 auto;
+	}
+
+	.work-main {
+		width: 58%;
+	}
+
+	.work-secondary {
+		width: 40%;
+	}
+
+	.extension-h4 {
+		margin-top: 0.5rem;
+	}
+
+	.extension-image {
+	    width: 300px;
+	}
+
+	.extension-cashback {
+		display: flex;
+	    flex-direction: row-reverse;
+	    justify-content: center;
+	    align-items: center;
+	    margin-top: 9rem;
+	}
+
+	.ext-clic-title p {
+		font-size: 3rem;
+	}
+
+	.ext-title {
+		flex-direction: row;
+	}
+
+	.ext-image-money {
+		width: 650px;
+		margin: 2rem auto 0;
+	}
+
+	.clic-button__ext {
+		margin-top: 1rem;
+		padding-left: 0;
+	}
+
+	.btn-extension {
+		font-size: 1rem;
+	    width: 129px;
+	    height: 30px;
+	}
+
+	.row-extension {
+		background: url("../../images/iwana-cash/trazo-dsk.png") no-repeat;
+		background-position: center 71px;
+    	background-size: 50%;
+	}
+
+	.row-extension-money {
+		margin-top: 22rem;
+	}
+
+	.clic-button__ext {
+		justify-content: center;
+	}
+
+}
+
+
+@media only screen and (min-width: 992px) {
+	.extension-detail {
+	    width: 800px;
+	}
+
+	.work-main {
+		width: 58%;
+	}
+
+	.work-secondary {
+		width: 40%;
+	}
+
+	.extension-h4 {
+		margin-top: 0.5rem;
+	}
+
+	.extension-image {
+		width: 400px;
+	}
+
+	.extension-cashback {
+		display: flex;
+	    flex-direction: row-reverse;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.ext-clic-title p {
+		font-size: 3rem;
+	}
+
+	.ext-title {
+		flex-direction: row;
+	}
+
+	.ext-image-money {
+		width: 650px;
+		margin: 2rem auto 0;
+	}
+
+	.clic-button__ext {
+		margin-top: 1rem;
+		padding-left: 0;
+	}
+
+	.btn-extension {
+		font-size: 1rem;
+	    width: 129px;
+	    height: 30px;
+	}
+}
