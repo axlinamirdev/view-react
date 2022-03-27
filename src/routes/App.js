@@ -15,11 +15,14 @@ import Login from "../presentacions/Login/Login"
 import Blog from "../presentacions/Blog/Home"
 
 import HomeIwanaCash from "../presentacions/Iwanacash/Home"
+import DetailStore from "../presentacions/Iwanacash/DetailStore"
+import ExtensionChrome from "../presentacions/Iwanacash/ExtensionChrome"
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import 'react-toastify/dist/ReactToastify.css'
 //import "../assets/css/style.css"
 import "../assets/css/iwana-cash/template.css"
 import "../assets/css/iwana-cash/home.css"
+import "../assets/css/iwana-cash/store.css"
   
 function App() {
   
@@ -37,6 +40,10 @@ function App() {
             <Route exact path="/blog" component={Blog} />
 
             <Route exact path="/iwana-cash" component={HomeIwanaCash} />
+            <Route exact path="/iwana-cash/detalle/tienda" component={DetailStore} />
+            <Route exact path="/iwana-cash/extension" component={ExtensionChrome} />
+
+            
         </Switch>
       </Router>
     );
