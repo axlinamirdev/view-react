@@ -1,0 +1,547 @@
+:root {
+	--color-corporative-1: #3BD23D;
+	--color-corporative-2: #2BC9AF;
+	--color-corporative-3: #00BCE3;
+	--color-corporative-4: #00AADA;
+	--color-corporative-alpha-3: #E5F8FC;
+	--color-corporative-alpha-4: #F4FCFE;
+	--color-gray-1: #424242;
+	--color-gray-2: #51514F;
+	--color-gray-3: #C3C3C3;
+	--color-gray-4: #F5F5F5;
+	--color-white: #FFFFFF;
+	--color-gradiente:  linear-gradient(104.04deg, #EAFAF7 0%, #E5F8FC 100%);
+	--color-black: #000000;
+	--color-error: #FF7200;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: #F4FCFE;
+	font-size: 1.6rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-outline-register {
+    width: 100%;
+    height: 35px;
+    color: var(--color-corporative-3);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid var(--color-corporative-3);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.btn-outline-register:hover {
+	color: var(--color-white);
+	background: var(--color-corporative-3);
+}
+
+.btn-outline-register:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.header-menu, .header-logo {
+	cursor: pointer;
+}
+
+.menu-container {
+	width: 169px;
+	position: relative;
+}
+
+.menu-options {
+	background: var(--color-corporative-4);
+	padding: 1rem;
+	border-radius: 10px;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+}
+
+.menu-options .menu-options__li {
+	padding: 0.5rem 1rem;
+}
+
+.menu-options .menu-options__li:before {
+	content: url("../../images/iwana-cash/menu/person.png");
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.menu-options .menu-options__li a {
+	color: var(--color-white);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.menu-options .menu-options__li a:hover {
+	text-decoration: none;
+}
+
+.menu-item {
+	font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-corporative-4);
+    margin-bottom: 0;
+    padding: 1rem;
+    border: 1px solid var(--color-corporative-4);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover + .menu-options {
+	display: block;
+}
+
+.btn-session {
+	text-transform: uppercase;
+	color: var(--color-corporative-4);
+	width: 123px;
+	height: 30px;
+	background: var(--color-corporative-alpha-4);
+}
+
+.text-buy {
+	margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.header {
+		align-items: flex-start;
+	}
+
+}
+
+.subtitle-main {
+	font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-gray-1);
+    text-transform: uppercase;
+}
+
+/**********************Medio*************************/
+.offers-h3 {
+	font-size: 1.5rem;
+	font-weight: normal;
+	color:var(--color-gray-2);
+	line-height: 1.8rem;
+	margin-bottom: 4rem;
+}
+
+.offers-item {
+	width: 230px;
+	height: 383px;
+	border-radius: 50px;
+	background: var(--color-white);
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers__item-price {
+	position: absolute;
+    top: -5rem;
+    right: 0;
+}
+
+.offers-logo {
+	width: 63px;
+	height: 63px;
+	margin-left: 1rem;
+    padding-top: 2rem;
+    align-self: start;
+   	position: absolute;
+    top: 0;
+}
+
+.offers-product {
+	position: relative;
+	height: 195px;
+}
+
+.offers-footer {
+	text-align: center;
+}
+
+.offers_porcentage {
+	font-size: .8rem;
+	font-weight: 400;
+	color: var(--color-corporative-4);
+	text-align: center;
+}
+
+.offers_price-container {
+	position: absolute;
+    top: 3rem;
+    left: 4rem;
+}
+
+.offers-footer__title {
+	color: var(--color-corporative-4);
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.offers-footer__subtitle {
+	color: var(--color-corporative-4);
+	font-size: .8rem;
+	font-weight: 400;
+}
+
+.offers_buy {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 1rem;
+}
+
+.offers_buy__price {
+	font-size: 1.6rem;
+	font-weight: 800;
+	color: var(--color-gray-1);
+	margin-bottom: 0;
+}
+
+.offers-url {
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: var(--color-gray-3);
+	margin-bottom: .5rem;
+}
+
+.offers-date-valid {
+	font-size: .8rem;
+	font-weight: 600;
+	font-style: normal;
+	color: var(--color-gray-2);
+}
+
+.clic-title {
+	color: var(--color-corporative-4);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.clic-subtitle {
+	font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--color-gray-2);
+}
+
+.clic-button {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clic-background__image {
+	width: 100%;
+}
+
+.btn-extension {
+	text-transform: uppercase;
+    width: 220px;
+}
+
+.featured-title {
+	font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-corporative-4);
+    line-height: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-featured__container {
+	margin-top: 6rem;
+	position: relative;
+}
+
+.featured_price {
+	position: absolute;
+    top: -3rem;
+    left: 6rem;
+}
+
+.featured_price-span {
+	font-size: 2.5rem;
+    color: var(--color-white);
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.featured_price-h4 {
+	font-size: 1.3rem;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--color-white);
+    margin-bottom: 0;
+    margin-top: -10px;
+}
+
+.featured-h3 {
+	font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-gray-2);
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.card-featured__item {
+	width: 180px;
+    height: 236px;
+    border-radius: 50px;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured__item-price {
+	margin-top: -8rem;
+}
+
+.btn-featured {
+	background: var(--color-corporative-4);
+    font-size: .8rem;
+    font-weight: bold;
+    font-style: normal;
+    width: 100px;
+    height: 30px;
+    color: var(--color-white);
+    border-radius: 30px;
+}
+
+.featured__item-logo {
+	width: 90px;
+    height: 90px;
+}
+
+.featured__item-title {
+	color: var(--color-corporative-4);
+	font-style: normal;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 1rem;
+	text-transform: uppercase;
+}
+
+.featured__item-imagen {
+	border-radius: 50%;
+	width: 100%;
+}
+
+.card-fans__header {
+	background: linear-gradient(104.04deg, #EAFAF7 0%, #E5F8FC 100%);
+    border-radius: 30px;
+    height: 256px;
+    padding-top: 5rem;
+}
+
+.card-fans__body {
+	margin-top: -5rem;
+}
+
+.card-fans__subtitle {
+	font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 4rem 0;
+    color: var(--color-gray-2);
+    line-height: 1.7rem;
+    margin-bottom: 4rem;
+}
+
+.card-fans__h3 {
+	font-size: 1.8rem;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--color-gray-2);
+    text-align: center;
+}
+
+.card-fans__description {
+	font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-gray-2);
+    text-align: center;
+}
+
+.card-fans__image {
+	height: 113px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+
+.company-mobile {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.company-container{
+	position: absolute;
+}
+
+.company-logo {
+	padding-top: 3rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.company-h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-style: normal;
+	color: var(--color-gray-2);
+	line-height: 1.9rem;
+	text-align: center;
+	margin-bottom: 5rem;
+	padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/************************Footer************************/
+
+.footer {
+	background: var(--color-white);
+	padding-top: 5rem;
+}
+
+.footer-logo {
+	margin-bottom: 2rem;
+}
+
+.footer-image {
+	margin-bottom: 3rem;
+}
+
+.footer-social_media {
+	display: flex;
+}
+
+.social_media {
+	width: 25px;
+	height: 25px;
+	margin-right: 1rem;
+}
+
+.social_media__image {
+	width: 100%;
+}
+
+.footer-info__company {
+	margin-bottom: 1.5rem;
+}
+
+.footer-info__platform {
+	width: 50%;
+}
+
+.footer-title {
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: var(--color-gray-2);
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.footer-description {
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.footer-list li a {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: var(--color-gray-2);
+}
+
+.footer-list li a:hover {
+	text-decoration: none;
+}
+
+.footer-list--line {
+	border-right: 1px solid var(--color-corporative-alpha-3);
+    padding-right: 3rem;
+    height: 74px;
+}
+
+.footer-info__options {
+	display: flex;
+}
+
+.complement-chrome:after {
+	content: url("../../images/iwana-cash/google-chrome.svg");
+	display: inline-block;
+    width: 20px;
+    height: 27px;
+    vertical-align: text-top;
+    margin-left: 1rem;
+}
+
+.footer-bottom {
+	margin-top: 3rem;
+}
+
+.footer-copyright {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: var(--color-gray-2);
+}

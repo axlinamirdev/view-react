@@ -1,0 +1,135 @@
+/*************************Main**********************/
+.col-main {
+	margin-top: 2rem;
+}
+
+.title-h1 {
+	font-weight: 900;
+	font-size: 2.5rem;
+	color: var(--color-corporative-4);
+	line-height: 3rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+.group-form {
+	position: relative;
+}
+
+.form-input {
+	font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-gray-2);
+    padding-left: 5rem;
+    border-radius: 50px;
+    border: none;
+    height: 54px;
+}
+
+.group-form span {
+	background-image: url("../../images/iwana-cash/search.png");
+	width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 17px;
+    left: 25px;
+}
+
+.subtitle-h4 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+	color: var(--color-gray-2);
+	display: flex;
+    flex-direction: column;
+}
+
+.btn-blue {
+	background: var(--color-corporative-4);
+	color: var(--color-white);
+	text-transform: uppercase;
+}
+
+.btn-go__store {
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 280px;
+    height: 44px;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.btn-go__store:after {
+	content: url("../../images/iwana-cash/icon-buy.png");
+	margin-left: 1rem;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-blue:hover {
+	color: var(--color-white);
+	background: rgb(0 170 218 / 70%);
+}
+
+.col-store {
+	margin-top: 6rem;
+}
+
+.title-h2 {
+	font-weight: 900;
+	font-size: 5rem;
+	color: var(--color-corporative-4);
+	line-height: 5rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+.col-store {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary-main {
+	width: 40%;
+}
+
+@media only screen and (min-width: 768px) {
+	.header-register, .header-menu {
+		display: none;
+	}
+
+	.col-main {
+		text-align: center;
+	}
+
+	.group-form {
+		width: 641px;
+		margin: 0 auto;
+	}
+
+	.form-input {
+		text-align: center;
+	}
+
+	.title-h1 {
+		font-size: 3.5rem;
+	}
+
+	.subtitle-h4 {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	.btn-go__store {
+	    font-size: .8rem;
+	    width: 114px;
+	    height: 30px;
+	    padding: 5px 10px;
+	}
+
+	.btn-go-store {
+		margin-right: 4rem;
+	}
+}
