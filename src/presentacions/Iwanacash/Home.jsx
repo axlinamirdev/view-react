@@ -14,6 +14,13 @@ import icon_google from "../../assets/images/iwana-cash/icon-google.png"
 import zapato from "../../assets/images/iwana-cash/zapato.png" 
 
 import Header from "../../components/iwana-cash/Layout/Header"
+import PanelMainDsk from "../../components/iwana-cash/Home/PanelMainDsk"
+import PanelMainMobile from "../../components/iwana-cash/Home/PanelMainMobile"
+import ProductSlider from "../../components/iwana-cash/Home/ProductSlider"
+import MediaQuery from 'react-responsive'
+
+
+
 
 const Home = () => {
 
@@ -36,94 +43,29 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-12 col-store">
-					<section className="primary-main">
-						<h1 className="title-h2">Te devolvemos dinero</h1>
-						<div className="col-store mt-5">
-							<p className="subtitle-h4"><span>Cada vez que compras online</span> <span>recibirás dinero de vuelta.</span></p>
-							<div className="btn-go-store">
-								<a href="!#" className="btn btn-blue btn-go__store">Ir a la tienda</a>
-							</div>
-						</div>
-					</section>
-					<section className="secondary-main">
-					</section>
+				<div className="col-12">
+					<MediaQuery minWidth={768}>
+						<PanelMainDsk item={[1,2,3,4]} />
+					</MediaQuery>
+					<MediaQuery maxWidth={767}>
+						<PanelMainMobile item={[1,2,3,4]} />
+					</MediaQuery>
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-12">
+				<div className="col-12 text-center">
 					<p className="clic-title">ofertas de cashback</p>
 					<section className="offers">
-						<p className="offers-h3">¡Ofertas imperdibles! ¡Vuelve con todo a clases!</p>
+						<p className="offers-h3"><span>¡Ofertas imperdibles!</span> <span className="pl-md-4">¡Vuelve con todo a clases!</span></p>
 						<section className="offers-container">
-							<div className="offers-item">
-								<div className="offers-price">
-									<div className="offers__item-price">
-										<img src={icon_featured} alt="Price" />
-										<div className="offers_price-container">
-											<p className="featured_price-span">20%</p>
-											<p className="featured_price-h4">Cashback</p>
-										</div>
-									</div>
-								</div>
-								
-								<div>
-									<div className="offers-product">
-										<img src={zapato} alt="Zapatos" />
-									</div>
-									<div className="offers-logo">
-										<img src={icon_dafiti} alt="Dafity" className="featured__item-imagen" />
-									</div>
-									<p className="offers_porcentage">50% descuento en tienda</p>
-								</div>
-								<div className="offers-footer">
-									<p className="offers-footer__title">Sandalia Mujer CrossGirl</p>
-									<p className="offers-footer__subtitle">VANS</p>
-									<div className="offers_buy">
-										<p className="offers_buy__price">$31.495</p>
-										<button type="button" className="btn btn-featured btn-sm">COMPRAR </button>
-									</div>
-									<p className="offers-url">www.dafiti.cl</p>
-									<p className="offers-date-valid">Válido hasta 03-12-2023 / 00:00</p>
-								</div>
-							</div>
+							<ProductSlider item={[1,2,3,4]} />
 						</section>
 					</section>
 
-					<section className="offers">
-						<p className="offers-h3">¡Ofertas imperdibles! ¡Vuelve con todo a clases!</p>
+					<section className="offers mt-5">
+						<p className="offers-h3 mt-7"><span>¡Disfruta el verano!</span> <span className="pl-md-4">Aprovecha estas oportunidades </span><span>y otras novedades!</span></p>
 						<section className="offers-container">
-							<div className="offers-item">
-								<div className="offers-price">
-									<div className="offers__item-price">
-										<img src={icon_featured} alt="Price" />
-										<div className="offers_price-container">
-											<p className="featured_price-span">20%</p>
-											<p className="featured_price-h4">Cashback</p>
-										</div>
-									</div>
-								</div>
-								
-								<div>
-									<div className="offers-product">
-										<img src={zapato} alt="Zapatos" />
-									</div>
-									<div className="offers-logo">
-										<img src={icon_dafiti} alt="Dafity" className="featured__item-imagen" />
-									</div>
-									<p className="offers_porcentage">50% descuento en tienda</p>
-								</div>
-								<div className="offers-footer">
-									<p className="offers-footer__title">Sandalia Mujer CrossGirl</p>
-									<p className="offers-footer__subtitle">VANS</p>
-									<div className="offers_buy">
-										<p className="offers_buy__price">$31.495</p>
-										<button type="button" className="btn btn-featured btn-sm">COMPRAR </button>
-									</div>
-									<p className="offers-url">www.dafiti.cl</p>
-									<p className="offers-date-valid">Válido hasta 03-12-2023 / 00:00</p>
-								</div>
-							</div>
+							<ProductSlider item={[1,2,3,4]} />
 						</section>
 					</section>
 				</div>

@@ -41,7 +41,7 @@ body {
 	display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -70,6 +70,10 @@ body {
 
 .header-menu, .header-logo {
 	cursor: pointer;
+}
+
+.header-menu-btn {
+	display: none;
 }
 
 .menu-container {
@@ -138,11 +142,66 @@ body {
     margin-right: 1rem;
 }
 
+.swiper-pagination-bullet {
+    width: 52px;
+    height: 5px;
+    border-radius: 0;
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after {
+	font-size: 12px;
+}
+
 @media only screen and (min-width: 768px) {
 	.header {
 		align-items: flex-start;
 	}
 
+	.header-menu-btn {
+		display: flex;
+	}
+
+	.main-slide__container .swiper-pagination {
+		padding-right: 6rem;
+		text-align: right;
+	}
+
+	.main-slide__container >.swiper-pagination-bullets, 
+	.swiper-pagination-custom, .swiper-pagination-fraction {
+	    bottom: 0px;
+	    left: 0;
+	    width: 100%;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+	.main-slide__container .swiper-pagination {
+		padding-right: 10rem;
+		text-align: right;
+	}
+
+	.main-slide__container >.swiper-pagination-bullets, 
+	.swiper-pagination-custom, .swiper-pagination-fraction {
+	    bottom: 7px;
+	    left: 0;
+	    width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.main-slide__container .swiper-pagination {
+		padding-right: 16rem;
+		text-align: right;
+	}
+
+	.main-slide__container >.swiper-pagination-bullets, 
+	.swiper-pagination-custom, .swiper-pagination-fraction {
+	    bottom: 47px;
+	    left: 0;
+	    width: 100%;
+	}
 }
 
 .subtitle-main {
@@ -156,120 +215,26 @@ body {
 }
 
 /**********************Medio*************************/
-.offers-h3 {
-	font-size: 1.5rem;
-	font-weight: normal;
-	color:var(--color-gray-2);
-	line-height: 1.8rem;
-	margin-bottom: 4rem;
-}
 
-.offers-item {
-	width: 230px;
-	height: 383px;
-	border-radius: 50px;
-	background: var(--color-white);
-	position: relative;
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.offers__item-price {
-	position: absolute;
-    top: -5rem;
-    right: 0;
-}
 
-.offers-logo {
-	width: 63px;
-	height: 63px;
-	margin-left: 1rem;
-    padding-top: 2rem;
-    align-self: start;
-   	position: absolute;
-    top: 0;
-}
 
-.offers-product {
-	position: relative;
-	height: 195px;
-}
 
-.offers-footer {
-	text-align: center;
-}
 
-.offers_porcentage {
-	font-size: .8rem;
-	font-weight: 400;
-	color: var(--color-corporative-4);
-	text-align: center;
-}
 
-.offers_price-container {
-	position: absolute;
-    top: 3rem;
-    left: 4rem;
-}
 
-.offers-footer__title {
-	color: var(--color-corporative-4);
-	font-size: 1.6rem;
-	font-weight: 600;
-	margin-bottom: 0;
-}
 
-.offers-footer__subtitle {
-	color: var(--color-corporative-4);
-	font-size: .8rem;
-	font-weight: 400;
-}
 
-.offers_buy {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	margin-bottom: 1rem;
-}
 
-.offers_buy__price {
-	font-size: 1.6rem;
-	font-weight: 800;
-	color: var(--color-gray-1);
-	margin-bottom: 0;
-}
 
-.offers-url {
-	font-size: 1.3rem;
-	font-weight: 600;
-	color: var(--color-gray-3);
-	margin-bottom: .5rem;
-}
 
-.offers-date-valid {
-	font-size: .8rem;
-	font-weight: 600;
-	font-style: normal;
-	color: var(--color-gray-2);
-}
 
-.clic-title {
-	color: var(--color-corporative-4);
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-}
 
-.clic-subtitle {
-	font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.8rem;
-    color: var(--color-gray-2);
-}
+
+
+
+
+
 
 .clic-button {
 	display: flex;
@@ -307,22 +272,9 @@ body {
     left: 6rem;
 }
 
-.featured_price-span {
-	font-size: 2.5rem;
-    color: var(--color-white);
-    font-weight: 900;
-    font-style: normal;
-    margin-bottom: 0;
-}
 
-.featured_price-h4 {
-	font-size: 1.3rem;
-    font-weight: 600;
-    font-style: normal;
-    color: var(--color-white);
-    margin-bottom: 0;
-    margin-top: -10px;
-}
+
+
 
 .featured-h3 {
 	font-size: 1.3rem;
