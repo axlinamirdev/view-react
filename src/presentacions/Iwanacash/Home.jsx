@@ -1,12 +1,8 @@
-import image_startup from "../../assets/images/iwana-cash/startup-chile.png"
+
 import image_logotipo_brand from "../../assets/images/iwana-cash/logotipo-brand.png"
-import logo_facebook from "../../assets/images/iwana-cash/cta_facebook.png" 
-import logo_instagram from "../../assets/images/iwana-cash/cta_instagram.png" 
-import logo_linkedin from "../../assets/images/iwana-cash/cta_linkedin.png" 
-import logo_whatsapp from "../../assets/images/iwana-cash/cta_whatsapp.png" 
-import logo_youtube from "../../assets/images/iwana-cash/cta_youtube.png" 
+ 
 import phone from "../../assets/images/iwana-cash/iPhone.png" 
-import fans1 from "../../assets/images/iwana-cash/fans/martha-comment.png" 
+
 import icon_featured from "../../assets/images/iwana-cash/featured.png" 
 import icon_dafiti from "../../assets/images/iwana-cash/brand-featured/dafiti.png" 
 import group_extension from "../../assets/images/iwana-cash/group_extension.png" 
@@ -14,9 +10,12 @@ import icon_google from "../../assets/images/iwana-cash/icon-google.png"
 import zapato from "../../assets/images/iwana-cash/zapato.png" 
 
 import Header from "../../components/iwana-cash/Layout/Header"
+import Footer from "../../components/iwana-cash/Layout/Footer"
 import PanelMainDsk from "../../components/iwana-cash/Home/PanelMainDsk"
 import PanelMainMobile from "../../components/iwana-cash/Home/PanelMainMobile"
 import ProductSlider from "../../components/iwana-cash/Home/ProductSlider"
+import OfferSlider from "../../components/iwana-cash/Home/OfferSlider"
+import ItemFans from "../../components/iwana-cash/Home/Fans/ItemFans"
 import MediaQuery from 'react-responsive'
 
 
@@ -54,7 +53,9 @@ const Home = () => {
 			</div>
 			<div className="row">
 				<div className="col-12 text-center">
-					<p className="clic-title">ofertas de cashback</p>
+					<div className="clic-title">
+						<p>ofertas de cashback</p>
+					</div>
 					<section className="offers">
 						<p className="offers-h3"><span>¡Ofertas imperdibles!</span> <span className="pl-md-4">¡Vuelve con todo a clases!</span></p>
 						<section className="offers-container">
@@ -71,15 +72,17 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-12 mb-5">
-					<div className="clic-title">
-						<p className="mb-0">Gana Dinero</p>
-						<p className="mb-0">en sólo 1 click</p>
-					</div>
-					<p className="clic-subtitle">Instala nuestra extensión para GOOGLE CHROME</p>
-					<div className="clic-button">
-						<img src={icon_google} alt="Icono Google Chrome" />
-						<button type="button" className="btn btn-blue btn-extension">instalar extensión</button>
+				<div className="col-12 col-clic">
+					<div>
+						<div className="clic-title">
+							<p className="mb-0">Gana Dinero</p>
+							<p className="mb-0 pl-md-5 pl-0">en sólo 1 click</p>
+						</div>
+						<p className="clic-subtitle">Instala nuestra extensión para GOOGLE CHROME</p>
+						<div className="clic-button">
+							<img src={icon_google} alt="Icono Google Chrome" />
+							<button type="button" className="btn btn-blue btn-extension">instalar extensión</button>
+						</div>
 					</div>
 					<div className="clic-background">
 						<img src={group_extension} alt="Instalar extensión Google" className="clic-background__image" />
@@ -88,27 +91,12 @@ const Home = () => {
 			</div>
 			<div className="row">
 				<div className="col-12 mb-5">
-					<p className="featured-title">Tiendas destacadas con cashback</p>
-					<p className="featured-h3">Revisa cada alianza que tenemos especialmente para ti</p>
+					<div className="clic-title text-center">
+						<p>Tiendas destacadas con cashback</p>
+					</div>
+					<p className="offers-h3 text-center"><span>Revisa cada alianza que </span><span>tenemos especialmente para ti</span></p>
 					<section className="card-featured__container">
-						<div className="card-featured__item">
-							<div className="featured__item-price">
-								<img src={icon_featured} alt="Price" />
-								<div className="featured_price">
-									<p className="featured_price-span">12%</p>
-									<p className="featured_price-h4">Cashback</p>
-								</div>
-							</div>
-							<div>
-								<div className="featured__item-logo">
-									<img src={icon_dafiti} alt="Dafity" className="featured__item-imagen" />
-								</div>
-								<p className="featured__item-title">Dafity</p>
-							</div>
-							<div className="featured__item-button">
-								<button type="button" className="btn btn-featured btn-sm">COMPRAR </button>
-							</div>
-						</div>
+						<OfferSlider item={[1,2,3,4]} />
 					</section>
 				</div>
 			</div>
@@ -119,15 +107,7 @@ const Home = () => {
 						<p className="card-fans__subtitle">¡Obtén hasta un 10% de devolución de dinero!</p>
 					</div>
 					<section className="card-fans__body">
-						<div className="card-fans__container">
-							<div className="card-fans__image">
-								<img src={fans1} alt="Martha Robertson" />
-							</div>
-							<p className="card-fans__h3">Martha Robertson</p>
-							<p className="card-fans__description">
-								"Me gusta, es súper cómoda. La experiencia es buena, porque es plata que no tenía considerada, así que “bkn” y puedo sacarlas como un regalo de mi yo del pasado por haber comprado cosas."  
-							</p>
-						</div>
+						<ItemFans  item={[1,2,3,4]} />
 					</section>
 				</div>
 			</div>
@@ -141,79 +121,12 @@ const Home = () => {
 							<div className="company-logo">
 								<img src={image_logotipo_brand} alt="IWANA CASH" />
 							</div>
-							<button type="button" className="btn btn-blue">Quiero Unirme</button>
+							<button type="button" className="btn btn-blue btn-join">Quiero Unirme</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="row">
-				<div className="col-12 footer">
-					<section className="footer-image">
-						<div className="footer-logo">
-							<img src={image_logotipo_brand} alt="IWANA CASH" />
-						</div>
-						<div className="footer-social_media">
-							<div className="social_media icon-facebook">
-								<img src={logo_facebook} alt="Facebook" className="social_media__image"  />
-							</div>
-							<div className="social_media icon-instagram">
-								<img src={logo_instagram} alt="Instagram" className="social_media__image"  />
-							</div>
-							<div className="social_media icon-linkedin">
-								<img src={logo_instagram} alt="Linkedin" className="social_media__image"  />
-							</div>
-							<div className="social_media icon-whatsapp">
-								<img src={logo_whatsapp} alt="Whatsapp" className="social_media__image"  />
-							</div>
-							<div className="social_media icon-youtube">
-								<img src={logo_youtube} alt="Youtube" className="social_media__image"  />
-							</div>
-						</div>
-					</section>
-					<section className="footer-info">
-						<div className="footer-info__company">
-							<p className="footer-title">Compañía</p>
-							<div className="footer-description">
-								<ul className="footer-list footer-list--line">
-									<li><a href="!#">Nosotros</a></li>
-									<li><a href="!#">Nuestras Reglas</a></li>
-									<li><a href="!#">Ayuda IWANACASH</a></li>
-								</ul>
-								<ul className="footer-list">
-									<li><a href="!#">Políticas de Privacidad</a></li>
-									<li><a href="!#">Términos y Condiciones</a></li>
-								</ul>
-							</div>
-						</div>
-						<div className="footer-info__options">
-							<div className="footer-info__platform">
-								<p className="footer-title">Plataforma</p>
-								<div className="footer-description">
-									<ul className="footer-list">
-										<li><a href="!#">Mi Cuenta</a></li>
-										<li><a href="!#">Ingresar</a></li>
-										<li><a href="!#">Tiendas</a></li>
-									</ul>
-								</div>
-							</div>
-							<div className="footer-info__platform">
-								<p className="footer-title">Complementos</p>
-								<div className="footer-description">
-									<ul className="footer-list">
-										<li className="complement-chrome"><a href="!#">Instalar Extensión</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section className="footer-bottom">
-						<div className="footer-logo__startup">
-							<img src={image_startup} alt="Startup Chile | CORFO" />
-						</div>
-						<p className="footer-copyright">©2022 IWANACASH Todos los derechos reservados.</p>
-					</section>
-				</div>
-			</div>
+			<Footer />
 		</div>
 	)
 }
