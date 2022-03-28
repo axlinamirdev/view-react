@@ -5,7 +5,7 @@ import ItemOffer from "./ItemOffer"
 const OfferSlider = ({ item }) => {
 
 	return (
-		<div className="car-slide">
+		<div className="featured-slide">
             {
                 item.length >0 && (
                 <Slider

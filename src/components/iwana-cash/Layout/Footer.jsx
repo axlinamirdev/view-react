@@ -23,7 +23,7 @@ const Footer = () => {
 							<img src={logo_instagram} alt="Instagram" className="social_media__image"  />
 						</div>
 						<div className="social_media icon-linkedin">
-							<img src={logo_instagram} alt="Linkedin" className="social_media__image"  />
+							<img src={logo_linkedin} alt="Linkedin" className="social_media__image"  />
 						</div>
 						<div className="social_media icon-whatsapp">
 							<img src={logo_whatsapp} alt="Whatsapp" className="social_media__image"  />

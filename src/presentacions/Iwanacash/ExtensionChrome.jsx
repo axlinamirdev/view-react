@@ -1,13 +1,10 @@
 import Layout from "../../components/iwana-cash/Layout/Layout"
-import group_extension from "../../assets/images/iwana-cash/group_extension.png" 
 import group_extension_dsk from "../../assets/images/iwana-cash/group_extension_dsk.png" 
 import icon_google from "../../assets/images/iwana-cash/icon-google.png" 
-import img_work_1 from "../../assets/images/iwana-cash/ext-work.png" 
 import img_work_dsk_1 from "../../assets/images/iwana-cash/ext-work-dsk.png" 
 import img_work_2 from "../../assets/images/iwana-cash/ext-landing.png" 
-import img_work_3 from "../../assets/images/iwana-cash/ext-cashback.png" 
 import img_work_dsk_3 from "../../assets/images/iwana-cash/ext-cashback-dsk.png"
-import img_trazo from "../../assets/images/iwana-cash/trazo.png" 
+
 
 const ExtensionChrome = () => {
 

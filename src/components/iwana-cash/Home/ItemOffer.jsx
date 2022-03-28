@@ -1,6 +1,5 @@
 import icon_featured from "../../../assets/images/iwana-cash/featured.png" 
 import icon_dafiti from "../../../assets/images/iwana-cash/brand-featured/dafiti.png" 
-import zapato from "../../../assets/images/iwana-cash/zapato.png" 
 
 const ItemOffer = () => {
 

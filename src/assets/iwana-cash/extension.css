@@ -1,8 +1,8 @@
 .extension-h4 {
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 400;
 	color: var(--color-gray-2);
-	margin-top: 20px
+	margin-top: 2rem;
 }
 
 .trazo {
@@ -26,7 +26,7 @@
 }
 
 .clic-button__ext {
-	margin-top: 70px;
+	margin-top: 7rem;
 }
 
 .store-extension_detail {
@@ -65,7 +65,7 @@
 	}
 
 	.extension-h4 {
-		margin-top: 5px;
+		margin-top: 0.5rem;
 	}
 
 	.extension-image {
@@ -77,11 +77,11 @@
 	    flex-direction: row-reverse;
 	    justify-content: center;
 	    align-items: center;
-	    margin-top: 90px;
+	    margin-top: 9rem;
 	}
 
 	.ext-clic-title p {
-		font-size: 30px;
+		font-size: 3rem;
 	}
 
 	.ext-title {
@@ -90,16 +90,16 @@
 
 	.ext-image-money {
 		width: 650px;
-		margin: 20px auto 0;
+		margin: 2rem auto 0;
 	}
 
 	.clic-button__ext {
-		margin-top: -20px;
+		margin-top: -2rem;
 		padding-left: 0;
 	}
 
 	.btn-extension {
-		font-size: 10px;
+		font-size: 1rem;
 	    width: 129px;
 	    height: 30px;
 	}
@@ -108,11 +108,11 @@
 		background: url("../../images/iwana-cash/trazo-dsk.png") no-repeat;
 		background-position: center 71px;
     	background-size: 50%;
-    	margin-top: 60px;
+    	margin-top: 6rem;
 	}
 
 	.row-extension-money {
-		margin-top: 220px;
+		margin-top: 22rem;
 	}
 
 	.clic-button__ext {
@@ -122,7 +122,7 @@
 
 	.extension-main {
 		width: 400px;
-    	margin-top: 15px;
+    	margin-top: 1.5rem;
 	}
 
 	.store-extension_detail {
@@ -143,8 +143,8 @@
 	}
 
 	.store-extension_detail .title-store {
-	    font-size: 30px;
-	    line-height: 30px;
+	    font-size: 3rem;
+	    line-height: 3rem;
 	}
 
 	.extension-main {
@@ -152,7 +152,7 @@
 	}
 
 	.row-extension-money {
-	    margin-top: 110px;
+	    margin-top: 11rem;
 	}
 
 	.extension-panel {
@@ -175,7 +175,7 @@
 	}
 
 	.extension-h4 {
-		margin-top: 5px;
+		margin-top: 0.5rem;
 	}
 
 	.extension-image {
@@ -190,7 +190,7 @@
 	}
 
 	.ext-clic-title p {
-		font-size: 30px;
+		font-size: 3rem;
 	}
 
 	.ext-title {
@@ -199,16 +199,16 @@
 
 	.ext-image-money {
 		width: 650px;
-		margin: 20px auto 0;
+		margin: 2rem auto 0;
 	}
 
 	.clic-button__ext {
-		margin-top: 10px;
+		margin-top: 1rem;
 		padding-left: 0;
 	}
 
 	.btn-extension {
-		font-size: 10px;
+		font-size: 1rem;
 	    width: 129px;
 	    height: 30px;
 	}
@@ -230,7 +230,7 @@
 	}
 
 	.row-extension-money {
-	    margin-top: 140px;
+	    margin-top: 14rem;
 	}
 }
 
@@ -240,6 +240,6 @@
 	}
 
 	.row-extension-money {
-	    margin-top: 190px;
+	    margin-top: 19rem;
 	}
 }

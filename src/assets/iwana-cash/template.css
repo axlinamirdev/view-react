@@ -41,15 +41,15 @@ body {
 	display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .btn-outline-register {
     width: 100%;
     height: 35px;
     color: var(--color-corporative-3);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -83,7 +83,7 @@ body {
 
 .menu-options {
 	background: var(--color-corporative-4);
-	padding: 10px;
+	padding: 1rem;
 	border-radius: 10px;
 	display: none;
 	position: absolute;
@@ -91,19 +91,19 @@ body {
 }
 
 .menu-options .menu-options__li {
-	padding: 5px 10px;
+	padding: 0.5rem 1rem;
 }
 
 .menu-options .menu-options__li:before {
 	content: url("../../images/iwana-cash/menu/person.png");
 	display: inline-block;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }
 
 .menu-options .menu-options__li a {
 	color: var(--color-white);
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 600;
 }
 
@@ -112,11 +112,11 @@ body {
 }
 
 .menu-item {
-	font-size: 12px;
+	font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-corporative-4);
     margin-bottom: 0;
-    padding: 10px;
+    padding: 1rem;
     border: 1px solid var(--color-corporative-4);
     border-radius: 10px;
     cursor: pointer;
@@ -144,10 +144,10 @@ body {
 
 .text-buy {
 	margin-bottom: 0;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 700;
-    padding-top: 10px;
-    margin-right: 10px;
+    padding-top: 1rem;
+    margin-right: 1rem;
 }
 
 .swiper-pagination-bullet {
@@ -162,7 +162,7 @@ body {
 }
 
 .main-slide__container .swiper-wrapper .swiper-slide {
-	padding-bottom: 20px;
+	padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -175,7 +175,7 @@ body {
 	}
 
 	.main-slide__container .swiper-pagination {
-		padding-right: 60px;
+		padding-right: 6rem;
 		text-align: right;
 	}
 
@@ -190,7 +190,7 @@ body {
 
 @media only screen and (min-width: 992px) {
 	.main-slide__container .swiper-pagination {
-		padding-right: 100px;
+		padding-right: 10rem;
 		text-align: right;
 	}
 
@@ -216,13 +216,13 @@ body {
 
 .footer {
 	background: var(--color-white);
-	padding-top: 50px;
+	padding-top: 5rem;
 	display: flex;
     flex-direction: column;
 }
 
 .footer-logo {
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 	width: 55%;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .footer-image {
-	margin-bottom: 30px;
+	margin-bottom: 3rem;
 }
 
 .footer-social_media {
@@ -241,7 +241,7 @@ body {
 .social_media {
 	width: 25px;
 	height: 25px;
-	margin-right: 10px;
+	margin-right: 1rem;
 }
 
 .social_media__image {
@@ -249,7 +249,7 @@ body {
 }
 
 .footer-info__company {
-	margin-bottom: 15px;
+	margin-bottom: 1.5rem;
 }
 
 .footer-info__platform {
@@ -258,11 +258,11 @@ body {
 
 .footer-title {
 	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
 	color: var(--color-gray-2);
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .footer-description {
@@ -273,7 +273,7 @@ body {
 
 
 .footer-list li a {
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 400;
 	color: var(--color-gray-2);
 }
@@ -284,7 +284,7 @@ body {
 
 .footer-list--line {
 	border-right: 1px solid var(--color-corporative-alpha-3);
-    padding-right: 30px;
+    padding-right: 3rem;
     height: 74px;
 }
 
@@ -298,11 +298,11 @@ body {
     width: 20px;
     height: 27px;
     vertical-align: text-top;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .footer-bottom {
-	margin-top: 10px;
+	margin-top: 1rem;
 	display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -312,14 +312,14 @@ body {
 .footer-copyright {
 	font-style: normal;
 	font-weight: 400;
-	font-size: 11px;
+	font-size: 1.1rem;
 	color: var(--color-gray-2);
 }
 
 .footer-info {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
 
 .footer-line {
@@ -341,12 +341,12 @@ body {
 	}
 
 	.footer-list--line {
-		padding-right: 10px;
+		padding-right: 1rem;
 	}
 
 	.footer-image {
 		width: 20%;
-    	margin-right: 25px;
+    	margin-right: 2.5rem;
 	}
 
 	.footer-info {
@@ -359,7 +359,7 @@ body {
 	}
 
 	.footer-info__company {
-		margin-right: 40px;
+		margin-right: 4rem;
 	}
 
 	.footer-bottom {
@@ -370,14 +370,14 @@ body {
 
 @media only screen and (min-width: 992px) {
 	.footer-info__company {
-		margin-right: 80px;
+		margin-right: 8rem;
 	}
 }
 
 
 @media only screen and (min-width: 1200px) {
 	.main-slide__container .swiper-pagination {
-		padding-right: 160px;
+		padding-right: 16rem;
 		text-align: right;
 	}
 
@@ -388,6 +388,29 @@ body {
 	    width: 100%;
 	}
 }
+
+
+
+/**********************Medio*************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .clic-button {
@@ -405,14 +428,14 @@ body {
 
 
 .card-featured__container {
-	margin-top: 60px;
+	margin-top: 6rem;
 	position: relative;
 }
 
 .featured_price {
 	position: absolute;
-    top: -30px;
-    left: 60px;
+    top: -3rem;
+    left: 6rem;
 }
 
 
@@ -420,12 +443,12 @@ body {
 
 
 .featured-h3 {
-	font-size: 13px;
+	font-size: 1.3rem;
     font-weight: 400;
     font-style: normal;
     color: var(--color-gray-2);
     text-align: center;
-    line-height: 17px;
+    line-height: 1.7rem;
 }
 
 .card-featured__item {
@@ -440,7 +463,7 @@ body {
 }
 
 .featured__item-price {
-	margin-top: -80px;
+	margin-top: -8rem;
 }
 
 
@@ -453,10 +476,10 @@ body {
 .featured__item-title {
 	color: var(--color-corporative-4);
 	font-style: normal;
-	font-size: 13px;
+	font-size: 1.3rem;
 	font-weight: 600;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 1rem;
 	text-transform: uppercase;
 }
 

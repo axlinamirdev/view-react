@@ -5,7 +5,7 @@ import ItemMainDsk from "./ItemMainDsk"
 const PanelMainDsk = ({ item }) => {
 	
 	return (
-		<div className="car-slide">
+		<div className="featured-slide">
             {
                 item.length >0 && (
                 <Slider

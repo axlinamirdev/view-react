@@ -1,5 +1,4 @@
 import Layout from "../../components/iwana-cash/Layout/Layout"
-import banner_mobile from "../../assets/images/iwana-cash/banner-hp-mobile.png"
 import banner_dsk from "../../assets/images/iwana-cash/banner-hp-dsk.png"
 import hp_dsk from "../../assets/images/iwana-cash/hp-dsk.png"
 import saving_intelligent_mobile from "../../assets/images/iwana-cash/ahorro-inteligente-mobile.png"

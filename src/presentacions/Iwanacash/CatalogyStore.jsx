@@ -9,7 +9,6 @@ const listOptions2 = [ "Pymes y emprendedores", "Electrónica y computación", "
 const listOptions3 = [ "Deportes", "Asia", "Arriendo de autos", "Gastronomía", "Gastronomía", "Software" ]
 const listOptions4 = [ "Vinos", "Juegos", "Servicios web", "Libros", "Regalos", "Movilidad y transporte" ]
 const listOptions5 = [  "Bebidas, jugos y aguas", "Línea blanca", "Zapatos y zapatillas", "Ferreterías" ]
-const listOptions6 = [   "Accesorios para autos", "Aerolíneas", "Parrillas", "Descuentos", "Seguros", "Gourmet" ]
 
 
 const CatalogyStore = () => {
