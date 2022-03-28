@@ -15,6 +15,7 @@
 	display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .ext-title {
@@ -28,7 +29,25 @@
 	margin-top: 7rem;
 }
 
+.store-extension_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-extension {
+	margin-left: -15px;
+    margin-right: -15px;
+}
+
 @media only screen and (min-width: 768px) {
+
+	.p-extension {
+		margin-left: 15px;
+	    margin-right: 15px;
+	}
+
 	.extension-detail {
 		display: flex;
 	    flex-direction: column;
@@ -75,7 +94,7 @@
 	}
 
 	.clic-button__ext {
-		margin-top: 1rem;
+		margin-top: -2rem;
 		padding-left: 0;
 	}
 
@@ -89,6 +108,7 @@
 		background: url("../../images/iwana-cash/trazo-dsk.png") no-repeat;
 		background-position: center 71px;
     	background-size: 50%;
+    	margin-top: 6rem;
 	}
 
 	.row-extension-money {
@@ -99,6 +119,45 @@
 		justify-content: center;
 	}
 
+
+	.extension-main {
+		width: 400px;
+    	margin-top: 1.5rem;
+	}
+
+	.store-extension_detail {
+	    display: flex;
+	    flex-direction: row;	    
+	}
+
+	.clic-button__extension {
+		padding-left: 0;
+	}
+
+	.store-extension_detail .store-header {
+		width: 40%;
+	}
+
+	.clic-background__extension {
+		width: 50%;
+	}
+
+	.store-extension_detail .title-store {
+	    font-size: 3rem;
+	    line-height: 3rem;
+	}
+
+	.extension-main {
+		width: 270px;
+	}
+
+	.row-extension-money {
+	    margin-top: 11rem;
+	}
+
+	.extension-panel {
+		flex-direction: row;
+	}
 }
 
 
@@ -152,5 +211,35 @@
 		font-size: 1rem;
 	    width: 129px;
 	    height: 30px;
+	}
+
+	.store-extension_detail .store-header {
+		width: 30%;
+	}
+
+	.clic-background__extension {
+		width: 60%;
+	}
+
+	.extension-main {
+		width: 400px;
+	}
+
+	.extension-cashback {
+		margin-top: 94px;
+	}
+
+	.row-extension-money {
+	    margin-top: 14rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) { 
+	.extension-cashback {
+		margin-top: 180px;
+	}
+
+	.row-extension-money {
+	    margin-top: 19rem;
 	}
 }
