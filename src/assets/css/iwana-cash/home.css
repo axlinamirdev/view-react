@@ -294,10 +294,11 @@
 .featured-logo {
     width: 105px;
     padding-top: 4rem;
+    text-align: center;
 }
 
 .featured-logo img {
-	width: 100%;
+	width: 70%;
 }
 
 .featured-footer__title {

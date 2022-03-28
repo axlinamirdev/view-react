@@ -3,11 +3,8 @@ import image_logotipo_brand from "../../assets/images/iwana-cash/logotipo-brand.
  
 import phone from "../../assets/images/iwana-cash/iPhone.png" 
 
-import icon_featured from "../../assets/images/iwana-cash/featured.png" 
-import icon_dafiti from "../../assets/images/iwana-cash/brand-featured/dafiti.png" 
 import group_extension from "../../assets/images/iwana-cash/group_extension.png" 
 import icon_google from "../../assets/images/iwana-cash/icon-google.png" 
-import zapato from "../../assets/images/iwana-cash/zapato.png" 
 
 import Header from "../../components/iwana-cash/Layout/Header"
 import Footer from "../../components/iwana-cash/Layout/Footer"
